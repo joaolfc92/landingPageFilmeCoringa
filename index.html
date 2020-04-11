@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Os Vingadores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="" class="logo"> <img src="assets/logo.png"> </a>
+        <div class="togle"><img src="assets/toggle.png"></div>
+    </header>
+    
+
+    <div class="banner">
+        <div class="content">
+            <h2>  Faça uma cara <span>Feliz </span>  </h2>
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo placeat a vitae est necessitatibus quod, facilis nulla dolore laudantium ex totam eius ratione ad quaerat quo! Vero alias odio eveniet! </p>
+
+            <a href="" class="play"  onclick="toggle()"> <img src="assets/play.png">  Assista o Trailer </a>
+
+            <div class="slide"></div>
+
+            <ul class="sci">
+                <li> <a href=""> <img src="assets/facebook.png"> </a> </li>
+                <li> <a href=""> <img src="assets/instagram.png"> </a> </li>
+                <li> <a href=""> <img src="assets/twitter.png"> </a> </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="trailer" >
+        <video src="assets/CORINGA _ Trailer Oficial (2019) Dublado HD.mp4" controls="true"></video>
+        <img src="assets/close.png" class="close" onclick="toggle()">
+    </div>
+
+    
+
+
+    <script>
+
+        function toggle(){
+            
+            var trailer = document.querySelector('.trailer')
+            var video =  document.querySelector('video')
+
+            trailer.classList.toggle('active')
+
+            video.currentTime=1;
+            video.pause()
+        }
+
+
+
+    </script>
+
+</body>
+</html>
+
